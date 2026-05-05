@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-deployment
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order-deployment
+  template:
+    metadata:
+      labels:
+        app: order-deployment
+    spec:
+      containers:
+      - name: order-deployment
+        image: europe-west2-docker.pkg.dev/new-dev-492605/myhomerepo/order-service:1.0
+         
+        ports:
+        - containerPort: 5001
