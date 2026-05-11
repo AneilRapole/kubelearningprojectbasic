@@ -26,11 +26,7 @@ spec:
               name: app-config
               key: USER_SERVICE_URL
 
-        - name: ORDER_SERVICE_URL
-          valueFrom:
-            configMapKeyRef:
-              name: app-config
-              key: ORDER_SERVICE_URL
+        
                 
         resources:
           requests:
