@@ -4,6 +4,6 @@ metadata:
   name: app-config
   namespace: dev
 data:
-  USER_SERVICE_URL: "http://user-service"
-  ORDER_SERVICE_URL: "http://order-service"
+  USER_SERVICE_URL: "http://user-service.dev.svc.cluster.local"
+  ORDER_SERVICE_URL: "http://order-service.dev.svc.cluster.local"
   ENV: "dev"
